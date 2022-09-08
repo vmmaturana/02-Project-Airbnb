@@ -10,7 +10,10 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/styles/cssStyle.css" />
+    <link
+      rel="stylesheet"
+      href="/Users/manuelmaturana/Documents/GitHub/project-airbnb-html-start/styles/cssStyle.css"
+    />
   </head>
   <body>
     <!-- NAVIGATION -->
@@ -46,78 +49,80 @@
     <!-- FILTERS -->
     <section class="bg-light">
       <div class="container text-center bg-light py-3">
-        <div class="row">
-          <!-- LOCATION FILTER -->
-          <div class="col">
-            <div class="input-group">
-              <label class="input-group-text" for="inputGroupSelect01"
-                >Location</label
-              >
-              <select class="form-select" id="inputGroupSelect01">
-                <option selected>Any Location</option>
-                <option value="1">Koh Samui</option>
-                <option value="2">Koh Phangan</option>
-                <option value="3">Bali</option>
-              </select>
+        <form>
+          <div class="row">
+            <!-- LOCATION FILTER -->
+            <div class="col">
+              <div class="input-group">
+                <label class="input-group-text" for="inputGroupSelect01"
+                  >Location</label
+                >
+                <select class="form-select" id="inputGroupSelect01">
+                  <option selected>Any Location</option>
+                  <option value="1">Koh Samui</option>
+                  <option value="2">Koh Phangan</option>
+                  <option value="3">Bali</option>
+                </select>
+              </div>
+            </div>
+            <!-- ROOMS FILTER -->
+            <div class="col">
+              <div class="input-group">
+                <label class="input-group-text" for="inputGroupSelect01"
+                  >Rooms</label
+                >
+                <select class="form-select" id="inputGroupSelect01">
+                  <option selected>Any rooms</option>
+                  <option value="1">1 room</option>
+                  <option value="2">2 rooms</option>
+                  <option value="3">3 rooms</option>
+                  <option value="4">4 rooms</option>
+                  <option value="5">5 rooms</option>
+                </select>
+              </div>
+            </div>
+            <!-- MAX PRICE FILTER -->
+            <div class="col">
+              <div class="input-group">
+                <span class="input-group-text">$</span>
+                <input
+                  type="text"
+                  class="form-control"
+                  aria-label="Amount (to the nearest dollar)"
+                  placeholder="Max Price"
+                />
+              </div>
+            </div>
+            <!-- PRICE FILTER DROPDOWN -->
+            <div class="col">
+              <div class="input-group">
+                <label class="input-group-text" for="inputGroupSelect01"
+                  >Price</label
+                >
+                <select class="form-select" id="inputGroupSelect01">
+                  <option selected>Price (low to high)</option>
+                  <option value="1">Price (high to low)</option>
+                </select>
+              </div>
+            </div>
+            <!-- SEARCH FILTER -->
+            <div class="col">
+              <div class="input-group flex-nowrap">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="House name..."
+                  aria-label="Username"
+                  aria-describedby="addon-wrapping"
+                />
+              </div>
+            </div>
+            <!-- SEARCH BUTTON -->
+            <div class="col">
+              <button type="button" class="btn btn-success">Search</button>
             </div>
           </div>
-          <!-- ROOMS FILTER -->
-          <div class="col">
-            <div class="input-group">
-              <label class="input-group-text" for="inputGroupSelect01"
-                >Rooms</label
-              >
-              <select class="form-select" id="inputGroupSelect01">
-                <option selected>Any rooms</option>
-                <option value="1">1 room</option>
-                <option value="2">2 rooms</option>
-                <option value="3">3 rooms</option>
-                <option value="4">4 rooms</option>
-                <option value="5">5 rooms</option>
-              </select>
-            </div>
-          </div>
-          <!-- MAX PRICE FILTER -->
-          <div class="col">
-            <div class="input-group">
-              <span class="input-group-text">$</span>
-              <input
-                type="text"
-                class="form-control"
-                aria-label="Amount (to the nearest dollar)"
-                placeholder="Max Price"
-              />
-            </div>
-          </div>
-          <!-- PRICE FILTER DROPDOWN -->
-          <div class="col">
-            <div class="input-group">
-              <label class="input-group-text" for="inputGroupSelect01"
-                >Price</label
-              >
-              <select class="form-select" id="inputGroupSelect01">
-                <option selected>Price (low to high)</option>
-                <option value="1">Price (high to low)</option>
-              </select>
-            </div>
-          </div>
-          <!-- SEARCH FILTER -->
-          <div class="col">
-            <div class="input-group flex-nowrap">
-              <input
-                type="text"
-                class="form-control"
-                placeholder="House name..."
-                aria-label="Username"
-                aria-describedby="addon-wrapping"
-              />
-            </div>
-          </div>
-          <!-- SEARCH BUTTON -->
-          <div class="col">
-            <button type="button" class="btn btn-success">Search</button>
-          </div>
-        </div>
+        </form>
       </div>
     </section>
     <!-- END OF FILTERS -->
