@@ -91,20 +91,71 @@
           </div>
           <!-- PRICE FILTER DROPDOWN -->
           <div class="col">
-            Price Filter
+            <div class="input-group">
+              <label class="input-group-text" for="inputGroupSelect01"
+                >Price</label
+              >
+              <select class="form-select" id="inputGroupSelect01">
+                <option selected>Price (low to high)</option>
+                <option value="1">Price (high to low)</option>
+              </select>
+            </div>
           </div>
           <!-- SEARCH FILTER -->
           <div class="col">
-            SearchInput
+            <div class="input-group flex-nowrap">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="House name..."
+                aria-label="Username"
+                aria-describedby="addon-wrapping"
+              />
+            </div>
           </div>
           <!-- SEARCH BUTTON -->
           <div class="col">
-            SearchButton
+            <button type="button" class="btn btn-success">Search</button>
           </div>
         </div>
       </div>
     </section>
     <!-- END OF FILTERS -->
+    <!-- CARDS/HOUSES SECTION -->
+    <section>
+      <div class="container text-center">
+        <div class="row row-cols-4">
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            Column
+          </div>
+          <div class="col">
+            Column
+          </div>
+          <div class="col">
+            Column
+          </div>
+          <div class="col">
+            Column
+          </div>
+          <div class="col">
+            Column
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
 
